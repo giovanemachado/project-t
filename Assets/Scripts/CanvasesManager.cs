@@ -1,48 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class CanvasesManager : MonoBehaviour
 {
-    public GameObject MainMenuStateText;
-    public GameObject PlayingStateText;
-    public GameObject PausedStateText;
+    public GameObject MainMenuCanvas;
+    public GameObject PausedMenuCanvas;
+    public GameObject HUDCanvas;
 
     void Awake()
     {
         GameManager.OnGameStateChange += GameManagerOnGameStateChanged;
-
-
     }
+
     void OnDestroy()
     {
         GameManager.OnGameStateChange -= GameManagerOnGameStateChanged;
     }
 
-    void GameManagerOnGameStateChanged(GameState state)
+    void GameManagerOnGameStateChanged(BaseGameState state)
     {
-        if (state == GameState.MainMenu)
-        {
-            MainMenuStateText.SetActive(true);
-
-            PlayingStateText.SetActive(false);
-            PausedStateText.SetActive(false);
-        }
-
-        if (state == GameState.Playing)
-        {
-            PlayingStateText.SetActive(true);
-
-            MainMenuStateText.SetActive(false);
-            PausedStateText.SetActive(false);
-        }
-
-        if (state == GameState.Paused)
-        {
-            PausedStateText.SetActive(true);
-
-            MainMenuStateText.SetActive(false);
-            PlayingStateText.SetActive(false);
-        }
+        MainMenuCanvas.SetActive(state == GameManager.Instance.MainMenuState);
+        HUDCanvas.SetActive(state == GameManager.Instance.PlayingState);
+        PausedMenuCanvas.SetActive(state == GameManager.Instance.PausedState);
     }
 }

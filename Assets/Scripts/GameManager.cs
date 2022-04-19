@@ -3,30 +3,38 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// This class allow you to subscribe to the game state change event everywhere. 
-/// </summary>
 public class GameManager : Singleton<GameManager>
 {
-    public GameState State;
+    BaseGameState state;
 
-    public static event Action<GameState> OnGameStateChange;
+    [HideInInspector] public MainMenuState MainMenuState = new MainMenuState();
+    [HideInInspector] public PlayingState PlayingState = new PlayingState();
+    [HideInInspector] public PausedState PausedState = new PausedState();
 
-    public void UpdateGameState(GameState newState)
-    {
-        State = newState;
-        OnGameStateChange?.Invoke(newState);
-    }
+    public static event Action<BaseGameState> OnGameStateChange;
 
     void Start()
     {
-        UpdateGameState(GameState.MainMenu);
+        InitStateAndInvokeEvent(MainMenuState);
     }
-}
-public enum GameState
-{
-    MainMenu,
-    Playing,
-    Paused
+
+    void Update()
+    {
+        state.UpdateState(this);
+    }
+
+    public void SwitchState(BaseGameState newState)
+    {
+        state.ExitState(this);
+
+        InitStateAndInvokeEvent(newState);
+    }
+
+    void InitStateAndInvokeEvent(BaseGameState initState)
+    {
+        state = initState;
+        OnGameStateChange?.Invoke(state);
+        state.EnterState(this);
+    }
 }
 
