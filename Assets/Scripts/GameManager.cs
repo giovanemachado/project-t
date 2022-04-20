@@ -10,6 +10,7 @@ public class GameManager : Singleton<GameManager>
     [HideInInspector] public MainMenuState MainMenuState = new MainMenuState();
     [HideInInspector] public PlayingState PlayingState = new PlayingState();
     [HideInInspector] public PausedState PausedState = new PausedState();
+    [HideInInspector] public QuitState QuitState = new QuitState();
 
     public static event Action<BaseGameState> OnGameStateChange;
 

@@ -9,4 +9,9 @@ public class MainMenuManager : MonoBehaviour
     {
         GameManager.Instance.SwitchState(GameManager.Instance.PlayingState);
     }
+
+    public void QuitButtonPressed()
+    {
+        GameManager.Instance.SwitchState(GameManager.Instance.QuitState);
+    }
 }
