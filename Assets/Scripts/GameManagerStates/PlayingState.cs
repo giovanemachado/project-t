@@ -1,17 +1,7 @@
-﻿using System;
-using System.Collections;
-using UnityEngine;
-using UnityEngine.UI;
-
-public class PlayingState : BaseGameState
+﻿namespace RouteTeamStudios.GameState
 {
-    public override void EnterState(GameManager gameManager)
+    public class PlayingState : BaseGameState
     {
         //
-    }
-
-    public override void UpdateState(GameManager gameManager)
-    {
-        //
-    }
+    } 
 }

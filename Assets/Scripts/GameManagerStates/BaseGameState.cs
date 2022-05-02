@@ -1,8 +1,11 @@
-public abstract class BaseGameState
+namespace RouteTeamStudios.GameState
 {
-    public abstract void EnterState(GameManager gameManager);
+    public abstract class BaseGameState
+    {
+        public virtual void EnterState(GameManager gameManager) { }
 
-    public abstract void UpdateState(GameManager gameManager);
+        public virtual void UpdateState(GameManager gameManager) { }
 
-    public virtual void ExitState(GameManager gameManager) { }
+        public virtual void ExitState(GameManager gameManager) { }
+    } 
 }
