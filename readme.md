@@ -13,11 +13,11 @@ Game short description.
 <details open="open">
   <summary>Table of Contents</summary>
   <ul>
-    <li><a href="#about-the-game"> About the game</a></li>
-    <li><a href="#how-to-play"> How to play</a></li>
-    <li><a href="#game-design"> Game design</a></li>
-    <li><a href="#game-development"> Game development</a></li>
-    <li><a href="#credits"> Credits</a></li>
+    <li><a href="#-about-the-game"> About the game</a></li>
+    <li><a href="#-how-to-play"> How to play</a></li>
+    <li><a href="#-game-design"> Game design</a></li>
+    <li><a href="#-game-development"> Game development</a></li>
+    <li><a href="#-credits"> Credits</a></li>
   </ul>
 </details>
 
