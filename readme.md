@@ -3,8 +3,8 @@ Game short description.
 
 <br>
 
-<p align="center"> 
-  <img src="https://c4.wallpaperflare.com/wallpaper/496/485/161/starcraft-cat-hd-wallpaper-preview.jpg" alt="Game gif">
+<p align="center" style="display: none;"> 
+  <img src="" alt="Game gif">
 </p>
 
 
