@@ -1,12 +1,12 @@
 # Game Title
 Game short description.
 
-<br>
+<!-- <br>
 
-<p align="center" style="display: none;"> 
+<p align="center"> 
   <img src="" alt="Game gif">
 </p>
-
+ -->
 
 <br>
 
