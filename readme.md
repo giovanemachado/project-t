@@ -1,12 +1,11 @@
-# Game Title
-Game short description.
+# Game title
+Game short description
 
-<!-- <br>
+<br>
 
-<p align="center"> 
-  <img src="" alt="Game gif">
-</p>
- -->
+<!-- <p align="center"> 
+  <img src="/print1.png" alt="Game gif">
+</p> -->
 
 <br>
 
@@ -44,9 +43,10 @@ Game design ideas about the game, references and etc.
 
 <h2 id="#game-development"> Game development</h2>
 Game development ideas about the game, highlights and etc.
+Created for Brackeys Game Jam 2022.1
 
 <br>
 <br>
 
 <h2 id="#credits"> Credits</h2>
-[Giovane Machado](https://github.com/giovanemachado) - game design and game development
+<a href="https://github.com/giovanemachado"> Giovane Machado</a> - game design and game development
