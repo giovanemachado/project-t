@@ -1,11 +1,11 @@
-# Game title
-Game short description
+# Project T
+Project T is my own base project for new games made with Unity. It has the structure that I like to use and my code style as well. I'm using here some famous game design patterns, like singletons, commanders, state machines, and etc.
 
 <br>
 
 <!-- <p align="center"> 
   <img src="/print1.png" alt="Game gif">
-</p> -->
+</p>
 
 <br>
 
@@ -50,3 +50,4 @@ Created for Brackeys Game Jam 2022.1
 
 <h2 id="#credits"> Credits</h2>
 <a href="https://github.com/giovanemachado"> Giovane Machado</a> - game design and game development
+ -->
