@@ -1,6 +1,6 @@
-using RouteTeamStudios.Core;
+using RouteTeamStudio.Core;
 
-namespace RouteTeamStudios.Commanders
+namespace RouteTeamStudio.Commanders
 {
     public class MenuSceneService : Commander
     {

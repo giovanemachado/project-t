@@ -1,4 +1,4 @@
-﻿namespace RouteTeamStudios.Core
+﻿namespace RouteTeamStudio.Core
 {
     public abstract class Commander
     {

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-namespace RouteTeamStudios.Utility
+namespace RouteTeamStudio.Utility
 {
     public abstract class StaticInstance<T> : MonoBehaviour where T : MonoBehaviour
     {

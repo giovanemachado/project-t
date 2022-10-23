@@ -1,4 +1,4 @@
-namespace RouteTeamStudios.Utility
+namespace RouteTeamStudio.Utility
 {
     public class Fsm
     {

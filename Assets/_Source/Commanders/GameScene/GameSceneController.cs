@@ -1,8 +1,8 @@
-using RouteTeamStudios.Gameplay.GameObject;
-using RouteTeamStudios.Utility;
+using RouteTeamStudio.Gameplay.GameObject;
+using RouteTeamStudio.Utility;
 using UnityEngine;
 
-namespace RouteTeamStudios.Commanders
+namespace RouteTeamStudio.Commanders
 {
     public class GameSceneController : MonoBehaviour
     {

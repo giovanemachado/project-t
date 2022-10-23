@@ -1,7 +1,7 @@
-using RouteTeamStudios.Core;
-using RouteTeamStudios.Gameplay.GameObject;
+using RouteTeamStudio.Core;
+using RouteTeamStudio.Gameplay.GameObject;
 
-namespace RouteTeamStudios.Commanders
+namespace RouteTeamStudio.Commanders
 {
     public class GameSceneService : Commander
     {

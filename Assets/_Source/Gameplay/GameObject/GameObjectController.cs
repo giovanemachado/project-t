@@ -1,6 +1,6 @@
-using RouteTeamStudios.Core;
+using RouteTeamStudio.Core;
 
-namespace RouteTeamStudios.Gameplay.GameObject
+namespace RouteTeamStudio.Gameplay.GameObject
 {
     public class GameObjectController : Controller
     {

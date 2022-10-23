@@ -1,8 +1,8 @@
-using RouteTeamStudios.Utility;
+using RouteTeamStudio.Utility;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace RouteTeamStudios.Commanders
+namespace RouteTeamStudio.Commanders
 {
     public class GameController : Singleton<GameController>
     {

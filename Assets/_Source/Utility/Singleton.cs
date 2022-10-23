@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-namespace RouteTeamStudios.Utility
+namespace RouteTeamStudio.Utility
 {
     public abstract class Singleton<T> : StaticInstance<T> where T : MonoBehaviour
     {

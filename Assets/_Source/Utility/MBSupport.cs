@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace RouteTeamStudios.Utility
+namespace RouteTeamStudio.Utility
 {
     public class MBSupport : MonoBehaviour { }
 }

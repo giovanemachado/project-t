@@ -1,7 +1,7 @@
-using RouteTeamStudios.Utility;
+using RouteTeamStudio.Utility;
 using UnityEngine;
 
-namespace RouteTeamStudios.Commanders
+namespace RouteTeamStudio.Commanders
 {
     public class MenuSceneController : MonoBehaviour
     {
