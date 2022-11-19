@@ -9,7 +9,6 @@ namespace RouteTeamStudio.Utility
         {
             if (Instance != null) Destroy(gameObject);
 
-            Debug.Log("sg?");
             base.Awake();
         }
     }

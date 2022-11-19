@@ -1,6 +1,8 @@
-﻿namespace RouteTeamStudio.Core
+﻿using RouteTeamStudio.Utility;
+
+namespace RouteTeamStudio.Core
 {
-    public abstract class Commander
+    public abstract class Commander : Singleton<Commander>
     {
         protected enum Method
         {
@@ -8,12 +10,6 @@
             START,
             UPDATE
         }
-
-        public abstract void OnAwake();
-
-        public abstract void OnStart();
-
-        public abstract void OnUpdate();
 
         protected void ExecuteControllerMethod(Controller controller, Method method = Method.UPDATE)
         {

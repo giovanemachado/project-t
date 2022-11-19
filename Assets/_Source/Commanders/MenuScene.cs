@@ -1,9 +1,10 @@
+using RouteTeamStudio.Core;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace RouteTeamStudio.Commanders
 {
-    public class GameService
+    public class MenuScene : Commander
     {
         public void PlayGame()
         {

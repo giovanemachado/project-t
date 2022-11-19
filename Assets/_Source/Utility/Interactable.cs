@@ -1,6 +1,6 @@
-using UnityEngine;
+using RouteTeamStudio.Core;
 
-namespace RouteTeamStudio.Core
+namespace RouteTeamStudio.Utility
 {
     public abstract class Interactable : Controller
     {
