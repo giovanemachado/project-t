@@ -25,7 +25,7 @@ namespace RouteTeamStudio.Core
             }
         }
 
-        protected void Start()
+        protected virtual void Start()
         {
             foreach (Controller controller in controllers)
             {
@@ -33,7 +33,7 @@ namespace RouteTeamStudio.Core
             }
         }
 
-        protected void Update()
+        protected virtual void Update()
         {
             foreach (Controller controller in controllers)
             {
