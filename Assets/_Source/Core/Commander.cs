@@ -1,14 +1,44 @@
-﻿using RouteTeamStudio.Utility;
+﻿using RouteTeamStudio.Gameplay.GameObjectC;
+using RouteTeamStudio.Utility;
+using UnityEngine;
 
 namespace RouteTeamStudio.Core
 {
     public abstract class Commander : Singleton<Commander>
     {
+        [SerializeField] protected Controller[] controllers;
+
         protected enum Method
         {
             AWAKE,
             START,
             UPDATE
+        }
+
+        protected override void Awake()
+        {
+            base.Awake();
+
+            foreach (Controller controller in controllers)
+            {
+                ExecuteControllerMethod(controller, Method.AWAKE);
+            }
+        }
+
+        protected void Start()
+        {
+            foreach (Controller controller in controllers)
+            {
+                ExecuteControllerMethod(controller, Method.START);
+            }
+        }
+
+        protected void Update()
+        {
+            foreach (Controller controller in controllers)
+            {
+                ExecuteControllerMethod(controller, Method.UPDATE);
+            }
         }
 
         protected void ExecuteControllerMethod(Controller controller, Method method = Method.UPDATE)
