@@ -1,12 +1,13 @@
 ﻿using RouteTeamStudio.Gameplay.GameObjectC;
 using RouteTeamStudio.Utility;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace RouteTeamStudio.Core
 {
     public abstract class Commander : Singleton<Commander>
     {
-        [SerializeField] protected Controller[] controllers;
+        [SerializeField] protected List<Controller> controllers = new List<Controller>();
 
         protected enum Method
         {
